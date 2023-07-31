@@ -53,7 +53,7 @@ def predict():
         # You can return a custom error message or status code if desired
         return jsonify({'error': 'An error occurred during prediction'}), 500
 
-@app.route('/predicthtml', methods=['GET'])
+@app.route('/diabetes', methods=['GET'])
 def predicthtml():
     try:
         # Check if the form has been submitted
