@@ -1,13 +1,14 @@
 FROM tensorflow/tensorflow:latest
 
-# Install Flask
+# Install Flask, pandas, and scikit-learn
 RUN pip install Flask pandas scikit-learn
 
-# Copy the app and models
+# Copy the app, models, and CSV file
 COPY app.py /app/
 COPY model_diabetes /app/model_diabetes
 COPY model_hypertension /app/model_hypertension
 COPY model_heart_disease /app/model_heart_disease
+COPY diabetes_prediction_dataset_binary.csv /app/
 
 # Set the working directory
 WORKDIR /app
