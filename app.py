@@ -116,7 +116,7 @@ def predicthtml():
 
         # Create the form
         form_html = f"""
-        <form action="/predicthtml" method="get">
+        <form action="/diabetes" method="get">
             <div class="form-group">
     <label for="age">Age:</label>
     <input type="number" class="form-control" name="age" min="0" max="150" required>
